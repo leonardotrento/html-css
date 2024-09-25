@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+
+
+h1{
+        font-family: "Gupter", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+}
+h1#principal{
+    text-align: left;
+    background-color: blue;
+}
