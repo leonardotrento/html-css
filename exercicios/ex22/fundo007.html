@@ -4,6 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alinhamento vertical</title>
+    <style>
+        #container{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+            position: relative;
+            height: 95vh;
+            padding: 10px;
+            background-color: purple;
+
+        }
+
+        #conteudo{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            margin: auto;
+            background-color: yellow;
+
+            transform: translate(0%, 0%);
+            bottom: 20%;
+            right: 30%;
+            left: 0%;
+            top: 38%;
+        }
+    </style>
 </head>
 <body>
     <section id="container">
