@@ -7,11 +7,24 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        
+        h1{
+            text-align: center;
+        }
+
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: peru;
         }
 
         table{
             width: 400px;
             border-collapse: collapse;
+            margin: auto auto;
         }
 
         thead, tfoot{
@@ -19,9 +32,14 @@
 
         }
 
+        tbody > tr :nth-child(0,5){
+            background-color: lightgray;
+        }
+        
+
         td, th {
             border: 1px solid black;
-
+            padding-left: 10px;
         }
 
         .num{
@@ -30,13 +48,14 @@
     </style>
 </head>
 <body>
-    <h1>uso de tabelas</h1>
+    <h1>Tabela populacional</h1>
 
     <table>
+        <caption>População do sudeste</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -59,7 +78,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes:</th>
+                <th scope="row">Total de habitantes:</th>
                <td class="num"><strong>94.227.813</strong></td>
             </tr>
         </tfoot>
