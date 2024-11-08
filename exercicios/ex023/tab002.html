@@ -25,6 +25,13 @@
             width: 400px;
             border-collapse: collapse;
             margin: auto auto;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: peru;
         }
 
         thead, tfoot{
@@ -32,7 +39,7 @@
 
         }
 
-        tbody > tr :nth-child(0,5){
+        tbody > tr:nth-child(2n){
             background-color: lightgray;
         }
         
